@@ -5,29 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             background-color: #f0f0f0;
+            margin: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            margin: 0;
         }
 
-        #message {
-            font-size: 24px;
-            color: #333;
-            text-align: center;
+        .chat-container {
             background-color: #fff;
-            padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .message {
+            margin: 10px;
+            max-width: 80%;
+        }
+
+        .outgoing {
+            align-self: flex-end;
+            background-color: #DCF8C6;
+        }
+
+        .message-content {
+            padding: 10px;
+        }
+
+        .message-meta {
+            text-align: right;
+        }
+
+        .message-time {
+            color: #888;
         }
     </style>
 </head>
 <body>
-    <div id="message">
-        <p>All the best for physics and English 🙇🏻‍♂️</p>
+    <div class="chat-container">
+        <div class="message outgoing">
+            <div class="message-content">
+                All the best for physics and English 🙇🏻‍♂️
+            </div>
+            <div class="message-meta">
+                <span class="message-time">08-11-2023 10:00 AM</span>
+            </div>
+        </div>
+
+        <div class="message outgoing">
+            <div class="message-content">
+                All the best for Sustainable engineering and Kannada
+            </div>
+            <div class="message-meta">
+                <span class="message-time">09-11-2023 09:24 AM</span>
+            </div>
+        </div>
     </div>
 </body>
 </html>
